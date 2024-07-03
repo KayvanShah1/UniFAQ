@@ -34,8 +34,6 @@ Imagine being a prospective student navigating through countless university webs
 4. **Integrating QLoRA PEFT**:
    - To enhance the quality of our FAQs, we integrated `Quantized Low-Rank Adaptation` (QLoRA) `Parameter-Efficient Fine-Tuning` (PEFT). This technique allowed us to fine-tune the models more efficiently, resulting in higher quality outputs.
 
-
-
 ## Objective
 
 Our goal is ambitious yet clear: develop an advanced natural language processing system capable of autonomously generating high-quality FAQs for university websites. By aiming for a 10% increase in FAQ accuracy and relevance compared to a baseline T5 transformer model, we strive to make a significant impact on how prospective students access and understand admission information.
