@@ -47,6 +47,8 @@ Our goal is to develop an advanced natural language processing system that can a
 
    ![Summary Sample](/assets/img/fine-tuning.drawio.png)
 
+   - Fine-tuned LLAMA2 & LLAMA3 USC CARC high performance computing machines using GPU allocated for a short duration of time.
+
 ## Key Findings and Conclusions
 - **Performance Comparison**:
     - **BART** consistently outperformed **T5** in generating FAQs, with higher precision, recall, and F1 scores.
