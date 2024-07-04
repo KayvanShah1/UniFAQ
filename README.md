@@ -1,5 +1,7 @@
 # UniFAQ: Fine-Tuned LLM based FAQ Generation for University Admissions
 
+![Banner](/assets/img/FAQ_banner.png)
+
 ## Overview
 
 In today's digital landscape, Large Language Models (LLMs) have revolutionized the way we process and generate text. From chatbots to content creation, their applications are vast and ever-growing. This project dives into one such compelling application: using LLMs to generate Frequently Asked Questions (FAQs) from graduate school admission requirements for Master of Science in Computer Science (MSCS) programs.
@@ -8,7 +10,13 @@ In today's digital landscape, Large Language Models (LLMs) have revolutionized t
 
 Imagine being a prospective student navigating through countless university websites, each with its own set of admission criteria. The process is overwhelming and time-consuming. Here’s where our project steps in. By leveraging the power of LLMs, we aim to simplify this journey. We investigated the performance of several top-tier language models — `T5-large`, `BART-large`, `LLaMA-2`, and `LLaMA-3` in generating FAQs that mirror real-world admission inquiries.
 
-## The Journey
+## Objective
+
+<!-- Our goal is ambitious yet clear: develop an advanced natural language processing system capable of autonomously generating high-quality FAQs for university websites. By aiming for a 10% increase in FAQ accuracy and relevance compared to a baseline T5 transformer model, we strive to make a significant impact on how prospective students access and understand admission information. -->
+
+Our goal is to develop an advanced natural language processing system that can autonomously generate high-quality FAQs for university websites. By leveraging the power of large language models (LLMs) such as T5-large, BART-large, LLaMA-2, and LLaMA-3, we aim to transform complex admission texts into structured, easily accessible FAQs. This project seeks to identify the most effective models for this task and explores innovative fine-tuning methods, including `Quantized Low-Rank Adaptation` (Q-LoRA) and `Parameter-Efficient Fine-Tuning` (PEFT), to optimize performance on limited hardware resources. Ultimately, we aim to significantly enhance the way prospective students access and understand admission information.
+
+## Implementation
 1. **Data Collection**:
    - We compiled a list of the top 150 US universities for computer science, based on USNews rankings.
    - Using the BeautifulSoup library, we scraped each university's website for admission requirements and existing FAQs.
@@ -39,11 +47,7 @@ Imagine being a prospective student navigating through countless university webs
 
    ![Summary Sample](/assets/img/fine-tuning.drawio.png)
 
-## Objective
-
-Our goal is ambitious yet clear: develop an advanced natural language processing system capable of autonomously generating high-quality FAQs for university websites. By aiming for a 10% increase in FAQ accuracy and relevance compared to a baseline T5 transformer model, we strive to make a significant impact on how prospective students access and understand admission information.
-
-## The Outcome
+## Results & Outcome
 
 Through this project, we envision a future where navigating through university admissions becomes a seamless experience. Prospective students will have quick access to accurate and relevant FAQs, tailored to their specific needs, all thanks to the power of LLMs.
 
