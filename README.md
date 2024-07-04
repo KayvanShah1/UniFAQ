@@ -26,7 +26,7 @@ Imagine being a prospective student navigating through countless university webs
     ![Flowchart](/assets/img/text_summary_gpt.drawio.png)
 
     <br>
-    
+
     ![Summary Sample](/assets/img/summarization_sample.png)
 
 2. **Dataset Preparation**:
@@ -35,9 +35,9 @@ Imagine being a prospective student navigating through countless university webs
 3. **Model Selection and Fine-Tuning**:
    - We started by choosing some of the most advanced language models available: `T5-large`, `BART-large`, `LLaMA-2`, and `LLaMA-3`.
    - Each model was meticulously fine-tuned using data specifically tailored to admission-related questions, ensuring the generated FAQs are both relevant and accurate.
+   - **Integrating QLoRA & PEFT**: To enhance the quality of our FAQs, we integrated `Quantized Low-Rank Adaptation` (QLoRA) `Parameter-Efficient Fine-Tuning` (PEFT). This technique allowed us to fine-tune the models more efficiently, resulting in higher quality outputs.
 
-4. **Integrating QLoRA PEFT**:
-   - To enhance the quality of our FAQs, we integrated `Quantized Low-Rank Adaptation` (QLoRA) `Parameter-Efficient Fine-Tuning` (PEFT). This technique allowed us to fine-tune the models more efficiently, resulting in higher quality outputs.
+   ![Summary Sample](/assets/img/fine-tuning.drawio.png)
 
 ## Objective
 
@@ -51,6 +51,7 @@ Join us on this exciting journey as we harness cutting-edge technology to transf
 
 ## Authors
 1. [Kayvan Shah](https://github.com/KayvanShah1) | `MS in Applied Data Science` | `USC`
+2. [Sudarshana Rao](https://github.com/SudarshanaSRao) | `MS in Electrical Engineering (Machine Learning & Data Science)` | `USC`
 
 #### LICENSE
 This repository is licensed under the `MIT` License. See the [LICENSE](LICENSE) file for details.
