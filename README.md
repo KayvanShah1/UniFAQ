@@ -21,7 +21,12 @@ Imagine being a prospective student navigating through countless university webs
     - Context Optimization: Summarized the context based on ground truth, removing redundant text to streamline information.
     - Instructional Fine-Tuning: Developed and coded instruction prompts to fine-tune LLMs, significantly improving the relevance and quality of the generated FAQs.
     
-    ![Flowchart](/assets/img/txt_summarization.png)
+    <br>
+
+    ![Flowchart](/assets/img/text_summary_gpt.drawio.png)
+
+    <br>
+    
     ![Summary Sample](/assets/img/summarization_sample.png)
 
 2. **Dataset Preparation**:
