@@ -8,7 +8,7 @@ In today's digital landscape, Large Language Models (LLMs) have revolutionized t
 
 ## Background
 
-Imagine being a prospective student navigating through countless university websites, each with its own set of admission criteria. The process is overwhelming and time-consuming. Here’s where our project steps in. By leveraging the power of LLMs, we aim to simplify this journey. We investigated the performance of several top-tier language models — `T5-large`, `BART-large`, `LLaMA-2`, and `LLaMA-3` in generating FAQs that mirror real-world admission inquiries.
+Imagine being a prospective student navigating through countless university websites, each with its own set of admission criteria. The process is overwhelming and time-consuming. Here’s where our project steps in. By leveraging the power of LLMs, we aim to simplify this journey. We investigated the performance of several top-tier language models — `T5-large`, `BART-large`, `Mistral 7b`, `LLaMA-2`, and `LLaMA-3` in generating FAQs that mirror real-world admission inquiries.
 
 ## Objective
 
@@ -41,7 +41,7 @@ Our goal is to develop an advanced natural language processing system that can a
    - Our dataset was split into training, validation, and testing sets in the ratio of 80%:10%:10%, ensuring a robust evaluation process.
 
 3. **Model Selection and Fine-Tuning**:
-   - We started by choosing some of the most advanced language models available: `T5-large`, `BART-large`, `LLaMA-2`, and `LLaMA-3`.
+   - We started by choosing some of the most advanced language models available: `T5-large`, `Mistral 7b`, `BART-large`, `LLaMA-2`, and `LLaMA-3`.
    - Each model was meticulously fine-tuned using data specifically tailored to admission-related questions, ensuring the generated FAQs are both relevant and accurate.
    - **Integrating QLoRA & PEFT**: To enhance the quality of our FAQs, we integrated `Quantized Low-Rank Adaptation` (QLoRA) `Parameter-Efficient Fine-Tuning` (PEFT). This technique allowed us to fine-tune the models more efficiently, resulting in higher quality outputs.
 
