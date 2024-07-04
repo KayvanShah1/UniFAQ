@@ -47,11 +47,63 @@ Our goal is to develop an advanced natural language processing system that can a
 
    ![Summary Sample](/assets/img/fine-tuning.drawio.png)
 
-## Results & Outcome
+## Key Findings and Conclusions
+- **Performance Comparison**:
+    - **BART** consistently outperformed **T5** in generating FAQs, with higher precision, recall, and F1 scores.
+    - **T5** struggled to generate FAQs for all universities and had a lower performance across all metrics.
+    - Despite some hallucination issues, BART’s generated content was significantly better than T5’s.
 
-Through this project, we envision a future where navigating through university admissions becomes a seamless experience. Prospective students will have quick access to accurate and relevant FAQs, tailored to their specific needs, all thanks to the power of LLMs.
+    ![BART Model Results](/assets/img/bart_op.png)
+    *Figure 1: BART model Generations.*
+
+    ![T5 Model Results](/assets/img/t5.png)
+    *Figure 2: T5 model Generations.*
+
+- **LLaMA Models' Superiority**:
+    - **LLaMA-2** and **LLaMA-3** models performed the best, producing accurate and relevant FAQs without hallucinations.
+    - Both models showed comparable performance, excelling in ROUGE metrics.
+    - The BERT F1 scores for LLaMA-2 and LLaMA-3, including zero-shot prompting, were around 0.8, indicating high-quality FAQ generation.
+
+    ![LLAMA Model Results](/assets/img/llama2_3_op.png)
+    *Figure 3: LLAMA2 & LLAMA3 model Generations.*
+
+- **Architectural Insights**:
+    - **BART** performed better due to its denoising auto-encoder architecture, which is explicitly trained to handle noisy input and read the input bidirectionally.
+    - **T5**, with its encoder-decoder architecture, is more suited for generic text-to-text generation but struggled with the specific task of FAQ generation on a small dataset.
+
+- **Dataset and Model Size Considerations**:
+    - The smaller dataset favored **BART** over **T5** because of BART's ability to generate from limited data.
+    - BART's smaller model size was advantageous for working with the constrained dataset used in this project.
+
+- **Implications of Zero-Shot Prompting**:
+    - Experiments indicated that extensive fine-tuning might not be necessary with powerful models like **LLaMA-2** and **LLaMA-3**.
+    - This insight suggests potential for significant reductions in computational costs and time in future applications, leveraging zero-shot prompting capabilities.
+
+    ![Zero shot prompting Model Results](/assets/img/0_shot_prompting_op.png)
+    *Figure 4: Zero shot prompting model Generations.*
+
+### Performance Metrics Summary
+
+| Model          | Precision | Recall | F1 Score | ROUGE-1 | ROUGE-2 | ROUGE-L |
+|----------------|-----------|--------|----------|---------|---------|---------|
+| **BART**       | 0.2820    | 0.1740 | 0.2260   | 0.2943  | 0.1927  | 0.2401  |
+| **T5**         | -0.0560   | -0.1160| -0.0860  | 0.1032  | 0.0094  | 0.0898  |
+| **LLaMA-2**    | -         | -      | -        | 0.2286  | 0.0772  | 0.1683  |
+| **LLaMA-3**    | -         | -      | -        | 0.2418  | 0.0760  | 0.2187  |
+
+These findings highlight the strengths of different models and their suitability for specific tasks in FAQ generation, providing valuable insights for future developments and applications.
+
+### Outcome
+
+Through this project, we envision a future where navigating university admissions becomes a seamless experience. Prospective students will have quick access to accurate and relevant FAQs tailored to their specific needs, all thanks to the power of LLMs. This innovation promises to simplify the admissions process, making it more accessible and user-friendly.
 
 Join us on this exciting journey as we harness cutting-edge technology to transform the educational landscape, one FAQ at a time.
+
+### Closing Thoughts
+
+The implications of our study extend beyond simplifying university admissions. Similar techniques could be applied to customer service, legal advice, or any field where complex information needs to be distilled into easy-to-understand FAQs. Furthermore, as LLMs continue to advance, their potential to democratize information and make various processes more efficient is enormous.
+
+This project not only advanced our understanding of LLM capabilities but also highlighted the collaborative potential of AI in addressing real-world problems. We encourage the academic community to build on our findings, explore new applications, and continue pushing the boundaries of what these remarkable models can achieve.
 
 ## Authors
 1. [Kayvan Shah](https://github.com/KayvanShah1) | `MS in Applied Data Science` | `USC`
