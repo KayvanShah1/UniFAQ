@@ -86,12 +86,19 @@ Our goal is to develop an advanced natural language processing system that can a
 
 ### Performance Metrics Summary
 
-| Model          | Precision | Recall | F1 Score | ROUGE-1 | ROUGE-2 | ROUGE-L |
+<!-- | Model          | Precision | Recall | F1 Score | ROUGE-1 | ROUGE-2 | ROUGE-L |
 |----------------|-----------|--------|----------|---------|---------|---------|
 | **BART**       | 0.2820    | 0.1740 | 0.2260   | 0.2943  | 0.1927  | 0.2401  |
 | **T5**         | -0.0560   | -0.1160| -0.0860  | 0.1032  | 0.0094  | 0.0898  |
 | **LLaMA-2**    | -         | -      | -        | 0.2286  | 0.0772  | 0.1683  |
-| **LLaMA-3**    | -         | -      | -        | 0.2418  | 0.0760  | 0.2187  |
+| **LLaMA-3**    | -         | -      | -        | 0.2418  | 0.0760  | 0.2187  | -->
+
+| Model          | ROUGE-1 | ROUGE-2 | ROUGE-L |
+|----------------|---------|---------|---------|
+| **BART**       | 0.2943  | 0.1927  | 0.2401  |
+| **T5**         | 0.1032  | 0.0094  | 0.0898  |
+| **LLaMA-2**    | 0.2286  | 0.0772  | 0.1683  |
+| **LLaMA-3**    | 0.2418  | 0.0760  | 0.2187  |
 
 These findings highlight the strengths of different models and their suitability for specific tasks in FAQ generation, providing valuable insights for future developments and applications.
 
